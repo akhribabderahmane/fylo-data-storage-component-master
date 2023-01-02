@@ -1,0 +1,187 @@
+/*
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  You’ve used 815 GB of your storage
+
+  185 GB Left
+  
+  0 GB
+  1000 GB
+  */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body
+  {
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-size:100vw 50vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main
+  {
+    display: flex;
+    flex-direction: row;
+    column-gap:3vw;
+    width: 70vw;
+    height: 28vh;
+    margin:37.5vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+.item
+{
+    background-color:hsl(228, 56%, 26%) ;
+}
+.item-1
+{
+    width:35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2em;
+    padding-left: 3em;
+    border-radius: 5px 55% 5px 5px;
+}
+.icons
+{
+    display: flex;
+    flex-direction: row;
+    column-gap:0.9em;
+}
+.icons .icon-item
+{
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 34px;
+    height: 34px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.item-2
+{
+  height: 75%;
+  width:60%;
+  align-self: flex-end;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.2em;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+}
+.item-2 *{
+  margin-left: 1em;
+}
+.bar
+{
+  width: 90%;
+  height: 12%;
+  border: 2px solid #000;
+  border-radius: 14px;
+  background-color: hsl(229, 57%, 11%);
+  margin-top: 1.2em;
+}
+.numbers
+{
+  display: flex;
+  column-gap: 70%;
+  font-weight: 700;
+}
+.bar-2
+{
+  height: 100%;
+  width: 81%;
+  background:linear-gradient( hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+  border-radius: 14px;
+  position: relative;
+  left: -15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.circle
+{
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.1em;
+  cursor: pointer;
+}
+.box
+{
+  width: 140px;
+  height: 65px;
+  background-color: white;
+  color: #000;
+  position: relative;
+  top:-64.4vh;
+  left: 74.75vw;
+  border-radius: 5px 5px 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap:1.2em;
+}
+.triangle
+{
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background-color: hsl(228, 56%, 26%);
+  position: relative;
+  top:-64.5vh;
+  left: 84.1vw;
+  background-image:
+  linear-gradient(to top right, transparent 50%, rgb(255, 255, 255) 0);
+background-repeat: no-repeat;
+background-position: left, right;
+}
+.box p:first-child{
+   font-weight: 700;
+   font-size: 2em;
+   margin-left: 0.3em;
+   color: hsl(229, 57%, 11%);
+
+}
+.box p:last-child{
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 1em;
+  color: hsl(228, 56%, 26%);
+
+}
+
+
+@media (max-width:400px)
+{
+  main
+  {
+   
+    flex-direction: column;
+    row-gap:3vw;
+    width: 80vw;
+    height: 90vh;
+    margin:5vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
